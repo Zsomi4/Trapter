@@ -1,3 +1,13 @@
+/*
+* File: Trapter.java
+* Author: Gubis Zsombor Dániel
+* Copyright: 2022, Gubis Zsombor Dániel
+* Group: Szoft_I_N
+* Date: 2022-02-22
+* Github: https://github.com/Zsomi4/
+* Licenc: GNU GPL
+*/
+
 import java.util.Scanner;
 
 class Trapter {
@@ -13,6 +23,13 @@ class Trapter {
 
 			System.out.print("C oldal: ");
 			double coldal = scan.nextDouble();
+
+			System.out.print("D oldal: ");
+			double doldal = scan.nextDouble();
+
+			double teruletegyikresze = (aoldal + boldal) / 4 * (aoldal - coldal);
+			double teruletmasikresze = Math.sqrt((aoldal + boldal - coldal + doldal) * (aoldal - boldal - coldal + doldal) * (aoldal + boldal - coldal - doldal) * (-aoldal + boldal + coldal + doldal));
+			double terulet = teruletegyikresze + teruletmasikresze;
 		}
 	}
 }
