@@ -33,10 +33,10 @@ class Trapter {
 			double teruletmasikresze = Math.sqrt((aoldal + boldal - coldal + doldal) * (aoldal - boldal - coldal + doldal) * (aoldal + boldal - coldal - doldal) * (-aoldal + boldal + coldal + doldal));
 			double terulet = teruletegyikresze * teruletmasikresze;
 
-			if (aoldal < 10) {
-				System.out.println("Sajnálom, de az a oldal nem lehet kisebb 10-nél.");
-			} else if (coldal < 10) {
-				System.out.println("Sajnálom, de a c oldal nem lehet kisebb 10-nél.");	
+			if (aoldal == 0) {
+				System.out.println("Sajnálom, de az a oldal nem lehet 0.");
+			} else if (coldal == 0) {
+				System.out.println("Sajnálom, de a c oldal nem lehet 0.");	
 			} else {
 				System.out.printf("Terület: %f", terulet);
 			}
