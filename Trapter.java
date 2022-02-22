@@ -10,6 +10,8 @@
 
 import java.util.Scanner;
 
+import com.oracle.webservices.internal.api.EnvelopeStyle.Style;
+
 class Trapter {
 	public static void main(String[] args) {
 		System.out.println("Gubis Zsombor Dániel, Szoft_I_N");
@@ -31,7 +33,13 @@ class Trapter {
 			double teruletmasikresze = Math.sqrt((aoldal + boldal - coldal + doldal) * (aoldal - boldal - coldal + doldal) * (aoldal + boldal - coldal - doldal) * (-aoldal + boldal + coldal + doldal));
 			double terulet = teruletegyikresze + teruletmasikresze;
 
-			System.out.printf("Terület: %f", terulet);
+			if (aoldal < 10) {
+				System.out.println("Sajnálom, de az a oldal nem lehet kisebb 10-nél.");
+			} else if (coldal < 10) {
+				System.out.println("Sajnálom, de a c oldal nem lehet kisebb 10-nél.");	
+			} else {
+				System.out.printf("Terület: %f", terulet);
+			}
 		}
 	}
 }
