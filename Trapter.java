@@ -31,7 +31,7 @@ class Trapter {
 
 			double teruletegyikresze = (aoldal + boldal) / 4 * (aoldal - coldal);
 			double teruletmasikresze = Math.sqrt((aoldal + boldal - coldal + doldal) * (aoldal - boldal - coldal + doldal) * (aoldal + boldal - coldal - doldal) * (-aoldal + boldal + coldal + doldal));
-			double terulet = teruletegyikresze + teruletmasikresze;
+			double terulet = teruletegyikresze * teruletmasikresze;
 
 			if (aoldal < 10) {
 				System.out.println("Sajnálom, de az a oldal nem lehet kisebb 10-nél.");
