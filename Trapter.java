@@ -10,8 +10,6 @@
 
 import java.util.Scanner;
 
-import com.oracle.webservices.internal.api.EnvelopeStyle.Style;
-
 class Trapter {
 	public static void main(String[] args) {
 		System.out.println("Gubis Zsombor Dániel, Szoft_I_N");
